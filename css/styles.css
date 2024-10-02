@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #02557d;
+  --secondary-color: #FFB749;
+}
+.custom-bg-primary {
+  background-color: var(--primary-color);
+}
+/* HEADER */
+#topNavbar{
+  min-height: 8vh;
+}
+#bottomNavbar {
+  height: 8vh;
+}
+#logo, #logo img {
+  height:100%;
+}
+.custom-navbar-icon {
+  height: 1.5rem;
+}
+/* HERO */
+.hero {
+  background-image: url('/public/img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 8vh;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.hero::before{
+  content: ''; 
+  position: absolute; 
+  display: block; 
+  top: 0; 
+  left: 0; 
+  height: 100%; 
+  width: 100%;
+  background: #02547d6f;
+  mix-blend-mode: multiply
+}
