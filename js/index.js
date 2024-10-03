@@ -1,4 +1,7 @@
 'use strict';
-window.addEventListener('load', async () => {
-  console.log('hola')
+
+import { headerScroll } from './headerScroll.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  headerScroll();
 });

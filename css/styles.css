@@ -9,9 +9,12 @@
 .custom-text-primary-dark {
   color: var(--dark-primary-color);
 }
+.custom-nav-link {
+  color: white;
+}
 .dot{
-  height: 1rem;
-  width: 1rem;
+  height: 18px;
+  width: 18px;
   background-color: var(--secondary-color);
   border-radius: 50%;
 }
@@ -23,22 +26,24 @@
   height: 8vh;
 }
 #logo, #logo img {
-  height:100%;
+  height:6vh;
+  position: absolute;
+  top:5px;
+  left: 1rem;
 }
 .custom-navbar-icon {
   height: 1.5rem;
 }
 /* HERO */
 .hero {
-  background-image: url('/public/img/hero.jpg');
-  background-size: cover;
-  background-position: center;
-  margin-top: 8vh;
   height: 92vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  margin-top: 8vh;
+  display: flex;/
+}
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .hero::before{
   content: ''; 
@@ -52,5 +57,49 @@
   mix-blend-mode: multiply
 }
 .custom-section {
-  height: 90vh;
+  min-height: 90vh;
+}
+.custom-section-sm {
+  min-height: 40vh;
+}
+/* BENEFITS */
+#benefits {
+  background-image: url('/public/img/benefits.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#benefits::before{
+  content: ''; 
+  position: absolute; 
+  display: block; 
+  top: 0; 
+  left: 0; 
+  height: 100%; 
+  width: 100%;
+  background: #02547d6f;
+  mix-blend-mode: multiply
+}
+.benefits-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.benefits-card div{
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefits-card div img{
+  width: 90%;
+  height: 90%;
+}
+.benefits-card h3{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 1rem;
 }
