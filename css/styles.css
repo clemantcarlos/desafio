@@ -25,6 +25,9 @@
 #bottomNavbar {
   height: 8vh;
 }
+#bottomNavbar ul {
+  font-size: 2rem;
+}
 #logo, #logo img {
   height:6vh;
   position: absolute;
@@ -39,11 +42,6 @@
   height: 92vh;
   margin-top: 8vh;
   display: flex;/
-}
-.hero video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .hero::before{
   content: ''; 
@@ -67,6 +65,7 @@
   background-image: url('/public/img/benefits.jpg');
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 #benefits::before{
   content: ''; 
@@ -103,3 +102,124 @@
   font-size: 2rem;
   margin-top: 1rem;
 }
+/* CAREERS */
+
+.career-card-vertical{
+  height: 17rem !important;
+  overflow: hidden;
+}
+.career-card-vertical:hover img{
+  transition: all ease-in 20ms;
+  transform: scale(1.1);
+}
+.career-card-horizontal {
+  height: 8rem !important;
+  overflow: hidden;
+}
+.career-card-horizontal:hover img{
+  transition: all ease-in 20ms;
+  transform: scale(1.1);
+}
+.career-card-horizontal > img{
+  height: 100% !important;
+  border-radius: .5rem;
+} 
+.career-card::before {
+  border-radius: .5rem;
+  content: ''; 
+  position: absolute; 
+  display: block; 
+  top: 0; 
+  left: 0; 
+  height: 100%; 
+  width: 100%;
+  background: #02547d6f;
+  mix-blend-mode: multiply
+}
+/* REVIEWS */
+.reviewImage{
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: .5rem;
+}
+.reviewImage::before{
+  border-radius: .5rem;
+  content: ''; 
+  position: absolute; 
+  display: block; 
+  top: 0; 
+  left: 0; 
+  height: 100%; 
+  width: 100%;
+  background: #02547d6f;
+  mix-blend-mode: multiply
+}
+.reviewImage,
+.reviewVideo:hover{
+  cursor: pointer;
+}
+.reviewImage:hover svg{
+  transition: all ease-in 30ms;
+  border-radius: 50%;
+  background-color: #ffffff3f;
+}
+#review1{
+  height: 100% !important;
+  width: 100% !important;
+  background-image: url('/public/img/person_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#review2{
+  height: 100% !important;
+  width: 100% !important;
+  background-image: url('/public/img/person_2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#review3{
+  height: 100% !important;
+  width: 100% !important;
+  background-image: url('/public/img/person_3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#review4{
+  height: 100% !important;
+  width: 100% !important;
+  background-image: url('/public/img/person_4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#review5{
+  height: 100% !important;
+  width: 100% !important;
+  background-image: url('/public/img/person_5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .career-card-vertical  {
+    height: 8rem !important;
+  }
+  #bottomNavbar ul {
+    font-size: 1rem;
+  }
+} 
+@media (max-width: 768px) {
+  .career-card-vertical  {
+    height: 8rem !important;
+  }
+  #bottomNavbar ul {
+    font-size: 1rem;
+  }
+} 
